@@ -104,8 +104,8 @@ header img {
 
 .newsletter {
     background-color: var(--gray);
-    padding: 20px;
-    margin-top: 80px;
+    padding: 0px;
+    margin-top: 20px;
 
 }
 .newsletter img {
@@ -134,18 +134,18 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 footer a {
     border: 1px solid var(--gray);
     border-radius: 3px;
     padding: 12px;
-    text-align: center
+    text-align: center;
 
 }
 
 footer a svg {
     width: 24px;
-    color: var(--black)
+    color: var(--black);
 }

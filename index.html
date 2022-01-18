@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Unicorn</title>
         <!-- Toujours du plus petit écran au plus grand -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
     </head>
     
     <body>
@@ -45,13 +45,24 @@
         <main class="container">
             <!-- Card #1 -->
             <div class="card-project">
-                <img src="images/projects/project_mobile_1.jpg" alt="Project mobile #1">
+                <picture>
+                    <!--ranges le images du plus petit au plus grand
+                    https://optimly.io/blog/how-to-use-responsive-images-with-picture-element/-->
+                    <source srcset="images/projects/project_1.png" media="(min-width: 1200px)">
+                    
+                
+                    <img src="images/projects/project_mobile_1.jpg" alt="Project mobile #1">
+                </picture>
                 <p>Branding for a fintech company based on Japanese technique Kumiko highlighting the flexibility and crafts menship of CMA</p>
             </div>
 
             <!-- Card #2 -->
             <div class="card-project">
+                <picture>
+                    <source srcset="images/projects/project_3.png" media="(min-width: 1200px)">
+                
                 <img src="images/projects/project_mobile_3.jpg" alt="Project mobile #3">
+                </picture>
                 <p>Showing heart and soul behind the VC fund for consumer technologies with references Le Petite Prince</p>
             </div>
 

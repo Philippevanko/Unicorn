@@ -1,0 +1,99 @@
+
+
+/** activation de cette feuille si l'ecran fait au moins 1200px*/
+@media screen and (min-width: 1200px) {
+    /*cacher le menu burger */
+    .menu-mobile {
+        display:none;
+    }
+    /* afficherle menu en liens hypertext*/
+    .menu-desktop {
+        display: flex;
+        align-items:center;
+        gap: 40px;
+        list-style: none;
+        
+    }
+    
+    .menu-desktop li a {
+        text-decoration: none;
+        color: var(--black);
+
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    header h1 {
+        font-size: 4rem;
+
+    }
+
+    header p {
+        font-size: 1.4rem;
+
+    }
+
+    header img {
+        width: 40%;
+        margin: 150px auto;
+    }
+    
+    /* Card-project */
+    .card-project {
+        position: relative;
+
+    }
+
+    .card-project p {
+        font-size: 1.2rem;
+        position: absolute;
+        width: 25%;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .btn-light {
+        display: none;
+
+    }
+
+    .newsletter {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;/*inverse l'orde d'affichage*/
+        padding: 50px;
+    }
+    .newsletter h2 {
+        font-size: 3rem;
+        margin-bottom: 50px;/* merga vers le bads*//*correction de la marge exterieur non prise en charge par la version mobile*/
+
+    }
+
+    .btn-dark {
+        display: inline; /*redonne l'etat initiazle de l'element html "a" */
+
+        
+    }
+
+    .newsletter img {
+        width: 50%;
+    }
+
+    /*
+    footer 
+    */
+
+    footer {
+        display: flex;
+        justify-content: right;/*tout deplacer vers la droite*/
+    }
+
+    footer a {
+        border: none;
+    }
+
+
+
+}   
